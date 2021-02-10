@@ -1,0 +1,47 @@
+<head th:fragment="head">
+<meta charset="UTF-8">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+	crossorigin="anonymous">
+<link
+	href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
+	rel="stylesheet">
+<style type="text/css">
+.jumbotron {
+	padding: 4rem 2rem;
+	margin-bottom: 2rem;
+	background-color: var(- -bs-light);
+	border-radius: .3rem;
+}
+
+.logo-container {
+	background-color: #47bcff;
+	color: #FFF;
+}
+
+.logo {
+	font-family: 'Handlee', cursive;
+	font-size: 2.5rem;
+}
+
+img {
+	width: 50%;
+}
+</style>
+
+</head>
+
+<div th:fragment="logo"
+	class="logo-container mb-3 p-3 d-flex justify-content-between">
+	<span class="logo">mudi</span> <span class="mt-3">login</span>
+</div>
+
+<div 
+th:fragment="titulo(valor)"
+class="jumbotron mb-0 bg-secondary">
+	<div>
+		<h1 class="display-4" th:text="${valor}"></h1>
+	</div>
+</div>
