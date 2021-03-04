@@ -41,7 +41,7 @@ img {
 <div th:fragment="logo"
 	class="">
 	
-	<div class="row logo-container  p-3 d-flex justify-content-between">
+	<div class="logo-container  p-3 d-flex justify-content-between">
 		<div class="col-md-10">			
 			<span class="logo ml-2">mudi</span>
 		</div>
@@ -54,11 +54,12 @@ img {
 		</div>	
 	</div>
 	
-	<div class="row" sec:authorize="isAuthenticated()">
+	<div  sec:authorize="isAuthenticated()">
 		<div class="col">
 			<nav class="nav">
 				<a class="nav-link" th:href="@{/home}">Home</a>
 				<a class="nav-link" th:href="@{/usuario/pedido}">Meus Pedidos</a>
+				<a class="nav-link" th:href="@{/oferta}">Faça sua oferta</a>
 			</nav>
 		</div>
 	</div>
